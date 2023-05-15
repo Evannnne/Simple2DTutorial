@@ -2642,7 +2642,7 @@ MonoBehaviour:
   m_AssetsPPU: 16
   m_RefResolutionX: 256
   m_RefResolutionY: 32
-  m_UpscaleRT: 0
+  m_UpscaleRT: 1
   m_PixelSnapping: 0
   m_CropFrameX: 0
   m_CropFrameY: 0
@@ -2810,6 +2810,7 @@ GameObject:
   - component: {fileID: 947195263}
   - component: {fileID: 947195262}
   - component: {fileID: 947195264}
+  - component: {fileID: 947195265}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2904,7 +2905,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!58 &947195263
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2941,6 +2942,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &947195265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 947195259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28356bd20c0cfc347bd349c28573965f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerSpeed: 10
+  jumpVelocity: 12.5
+  health: 3
 --- !u!1 &1307883946
 GameObject:
   m_ObjectHideFlags: 0
